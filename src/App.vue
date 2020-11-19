@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+	<div id="app">
 		<h3>Pages</h3>
-    <WidgetPages />
+		<WidgetPages />
 		<br />
 		<h3>Fixed width (200px)</h3>
 		<WidgetFixedWidth />
@@ -13,7 +13,7 @@
 		<WidgetVertical />
 		<br />
 		<br />
-  </div>
+	</div>
 </template>
 
 <script>
@@ -23,29 +23,29 @@ import WidgetIntrinsicWidth from './components/WidgetIntrinsicWidth';
 import WidgetVertical from './components/WidgetVertical';
 
 export default {
-  name: 'App',
-  components: {
-    WidgetPages,
-    WidgetFixedWidth,
+	name: 'App',
+	components: {
+		WidgetPages,
+		WidgetFixedWidth,
 		WidgetIntrinsicWidth,
 		WidgetVertical,
-  }
+	}
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
 }
 
 .scrollContainer {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
 
 	&--noBar {
 		overflow: -moz-scrollbars-none;
@@ -57,14 +57,14 @@ export default {
 }
 
 .flex {
-  display: flex;
+	display: flex;
 }
 
 .ml-a {
-  margin-left: auto;
+	margin-left: auto;
 }
 
 .mr-a {
-  margin-right: auto;
+	margin-right: auto;
 }
 </style>

@@ -48,11 +48,11 @@ export default {
 
 <style lang="scss">
 .item-4 {
-  flex-shrink: 0;
-  width: 100%;
-  height: 100px;
-  background: gray;
-  scroll-snap-align: start;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100px;
+	background: gray;
+	scroll-snap-align: start;
 }
 
 .vertical-container{

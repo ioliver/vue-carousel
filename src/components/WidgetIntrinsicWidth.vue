@@ -1,7 +1,7 @@
 <template>
-  <Carousel>
-    <CarouselContent class="scrollContainer">
-      <div
+	<Carousel>
+		<CarouselContent class="scrollContainer">
+			<div
 				v-for="index of 20"
 				:key="index"
 				class="item-3"
@@ -10,13 +10,13 @@
 					width: `${Math.floor(Math.random() * (200 - 60 + 1)) + 60}px`
 				}"
 			>{{ index }}</div>
-    </CarouselContent>
+		</CarouselContent>
 
-    <div class="flex">
-      <CarouselPrev class="mr-a">Prev</CarouselPrev>
+		<div class="flex">
+			<CarouselPrev class="mr-a">Prev</CarouselPrev>
 			<CarouselNext class="ml-a">Next</CarouselNext>
-    </div>
-  </Carousel>
+		</div>
+	</Carousel>
 </template>
 
 <script>
@@ -26,7 +26,7 @@ import CarouselPrev from "./carousel/CarouselPrev.vue";
 import CarouselNext from "./carousel/CarouselNext.vue";
 
 export default {
-  components: { Carousel, CarouselContent, CarouselPrev, CarouselNext },
+	components: { Carousel, CarouselContent, CarouselPrev, CarouselNext },
 	computed: {
 		width: () => {
 			const widthArray = [];
@@ -41,9 +41,9 @@ export default {
 
 <style lang="scss">
 .item-3 {
-  flex-shrink: 0;
-  height: 50px;
-  background: gray;
-  scroll-snap-align: start;
+	flex-shrink: 0;
+	height: 50px;
+	background: gray;
+	scroll-snap-align: start;
 }
 </style>
