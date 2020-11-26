@@ -1,7 +1,7 @@
 <template>
 	<div class="vertical-container">
 		<Carousel v-slot="{ page, pages }">
-			<CarouselContent class="scrollContainer">
+			<CarouselContent>
 				<div
 					v-for="(chunk, chunkIndex) of chunkedItems"
 					:key="chunkIndex"

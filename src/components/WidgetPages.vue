@@ -1,6 +1,6 @@
 <template>
 	<Carousel v-slot="{ page, pages }">
-		<CarouselContent class="scrollContainer">
+		<CarouselContent>
 			<div v-for="index of 5" :key="index" class="item" :style="{ background: `hsl(0, 0%, ${50 + 3 * index}%)` }">{{ index }}</div>
 		</CarouselContent>
 

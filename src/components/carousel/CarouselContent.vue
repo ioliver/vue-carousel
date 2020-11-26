@@ -1,5 +1,5 @@
 <template>
-	<div :class="{ 'scrollContainer--noBar': !bar }">
+	<div class="scrollContainer" :class="{ 'scrollContainer--noBar': !bar }">
 		<slot />
 	</div>
 </template>
@@ -85,3 +85,19 @@ export default {
 	}
 };
 </script>
+
+<style lang="scss">
+.scrollContainer {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+
+	&--noBar {
+		overflow: -moz-scrollbars-none;
+		-ms-overflow-style: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+</style>

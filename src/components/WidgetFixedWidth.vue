@@ -1,6 +1,6 @@
 <template>
 	<Carousel>
-		<CarouselContent class="scrollContainer">
+		<CarouselContent>
 			<div v-for="index of 17" :key="index" class="item-2" :style="{ background: `hsl(0, 0%, ${50 + 3 * index}%)` }">{{ index }}</div>
 		</CarouselContent>
 

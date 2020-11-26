@@ -1,6 +1,6 @@
 <template>
 	<Carousel>
-		<CarouselContent class="scrollContainer">
+		<CarouselContent>
 			<div
 				v-for="index of 20"
 				:key="index"
