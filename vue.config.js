@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: '/vue-carousel/'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/vue-carousel/'
+    : '/'
 }
